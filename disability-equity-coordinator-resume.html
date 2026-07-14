@@ -10,7 +10,6 @@
         /* GENERAL FORMATTING */
             
             body {
-                margin: 3rem;
                 font-family: sans-serif;
             }
 
@@ -21,8 +20,13 @@
                 margin-bottom: 1rem;
             }
 
+            address a {
+                color: white;
+            }
+
             h1{
                 margin: 0;
+                color: white;
             }
 
             h2 {
@@ -56,6 +60,11 @@
 
             .backlink {
                 font-size: 1.3rem;
+            }
+
+            header {
+                background: cornflowerblue;
+                padding: 1rem 3rem;
             }
 
         /* TABLE OF CONTENTS */
@@ -115,6 +124,10 @@
                 display: inline-block;
             }
         </style>
+
+        <script>
+            $(document).foundation();
+        </script>
     </head>
     <body>
 
@@ -122,9 +135,10 @@
             <h1>Yone Jon Kriney</h1>
             <address><a href="mailto:yone.kriney@gmail.com">yone.kriney@gmail.com</a></address>
         </header>   
-
-        <hr>
-
+        
+        <div id="grid-container" class="cell medium-auto medium-cell-block-container">
+            <div class="grid-x grid-padding-x">
+                <div class="cell medium-4 medium-cell-block-y">
         <nav aria-labelledby="toc">  
 
             <h2 id="toc">Table of Contents</h2>
@@ -163,8 +177,9 @@
                 </li>
             </ul>
         </nav>
+        </div>
         
-        <hr>
+        <div class="cell medium-8 medium-cell-block-y">
         
         <main id="main" tabindex="-1">
             <section aria-labelledby="professional">
@@ -310,7 +325,9 @@
                 </ul>
             </section>
         </main>
-
+    </div>
+    </div>
+    </div>
         <hr>
         
         <footer>
